@@ -51,9 +51,5 @@ def backSub(c, d, n):
     
     return d 
 
-def printMatrix(A):
-    for row in A:
-        print(row)
-
 
 main()
