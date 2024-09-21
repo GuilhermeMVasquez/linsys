@@ -1,5 +1,5 @@
 from sys import argv
-
+ 
 def main():
     n = int(argv[1])
     A, b = buildMatrices(n)
@@ -25,7 +25,7 @@ def buildMatrices(n):
     return A, b
 
 def thomas(A, b, n):
-    c = [0] * n
+    c = [0] * (n-1)
     d = [0] * n
 
     d = forwardSub(A, b, c, d, n)
